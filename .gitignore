@@ -1,0 +1,74 @@
+# Build results
+bin/
+obj/
+[Bb]uild/
+[Bb]uild[Ll]og.*
+
+# VS Code
+.vscode/
+
+# Rider / JetBrains
+.idea/
+.vs/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# VS crash logs
+*.vspscc
+*.vssscc
+
+# ASP.NET generated files
+wwwroot/lib/
+node_modules/
+dist/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+*.nuspec
+
+# Entity Framework
+Migrations/
+
+# DotCover
+*.dotCover
+
+# dotnet tools
+*.db
+.project/
+.Tooling/
+
+# Local secrets
+secrets.json
+
+# Publish artifacts
+publish/
+out/
+artifacts/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+~$*
+
+# Ignore Docker build output (optional)
+docker-output/
+
+# OS files
+.DS_Store
+Thumbs.db
