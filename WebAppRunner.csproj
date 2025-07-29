@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <Company>Syniti</Company>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+	<PackRelease>false</PackRelease>
+	<PublishRelease>false</PublishRelease>
+	<IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.2" />
+		<PackageReference Include="Microsoft.Extensions.Logging" />
+		<PackageReference Include="Syniti.Clients.QzarAuthorize" Version="1.8.168" />
+		<PackageReference Include="Syniti.Clients.QzarMint" Version="1.8.168" />
+		<PackageReference Include="Syniti.Clients.Starfish" Version="1.8.167" />
+		<PackageVersion Include="Syniti.Clients.QzarMint" Version="1.8.168" />
+		<PackageReference Include="Syniti.Hosting" Version="1.8.168" />
+		<PackageReference Include="System.Text.Encodings.Web" />
+		<PackageVersion Include="Syniti.Common" Version="1.8.168" />
+	</ItemGroup>
+
+</Project>
