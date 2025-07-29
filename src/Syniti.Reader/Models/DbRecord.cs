@@ -11,22 +11,6 @@ namespace ReaderLibrary.Models
         public Dictionary<string, object> Fields { get; set; } = new();
     }
 
-    // Configuration model for the connector
-    public class MSSQLSourceConfig
-    {
-        public string Host { get; set; }
-
-        public int Port { get; set; } = 1433;
-
-        public string Database { get; set; }
-
-        public string Username { get; set; }
-
-        public string Password { get; set; }
-
-        public List<string> Tables { get; set; } = new List<string>();
-    }
-
     // Airbyte message types
     public enum AirbyteMessageType
     {
@@ -42,17 +26,17 @@ namespace ReaderLibrary.Models
     {
         public AirbyteMessageType type { get; set; }
 
-        public object record { get; set; }
+        public object? Record { get; set; }
 
-        public object state { get; set; }
+        public object? State { get; set; }
 
-        public object log { get; set; }
+        public object? Log { get; set; }
 
-        public object spec { get; set; }
+        public object? Spec { get; set; }
 
-        public object connectionStatus { get; set; }
+        public object? ConnectionStatus { get; set; }
 
-        public object catalog { get; set; }
+        public object? Catalog { get; set; }
     }
 
     public class AirbyteRecord
