@@ -4,13 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EAE8A193-490F-4AA5-82FC-5A8529BA9DD4}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReaderLibrary", "Syniti.Reader\ReaderLibrary.csproj", "{5EED070C-510D-4F05-8324-F2162F9928B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReaderLibrary", "src\Syniti.Reader\ReaderLibrary.csproj", "{5EED070C-510D-4F05-8324-F2162F9928B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppRunner", "src\WebAppRunner.csproj", "{2B510939-9CFF-459A-9CDE-6C43F737C92A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppRunner", "src\Connector.Web\WebAppRunner.csproj", "{2B510939-9CFF-459A-9CDE-6C43F737C92A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,5 +26,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A7749D07-F61F-4C6F-8B46-FAC07AA53D7D}
 	EndGlobalSection
 EndGlobal

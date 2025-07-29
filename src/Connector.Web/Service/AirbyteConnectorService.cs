@@ -48,7 +48,7 @@ namespace WebAppRunner.Service
                 return Task.FromResult(new AirbyteMessage
                 {
                     type = AirbyteMessageType.SPEC,
-                    spec = spec
+                    Spec = spec
                 });
             }
 
@@ -63,7 +63,7 @@ namespace WebAppRunner.Service
                     return new AirbyteMessage
                     {
                         type = AirbyteMessageType.CONNECTION_STATUS,
-                        connectionStatus = new AirbyteConnectionStatus
+                        ConnectionStatus = new AirbyteConnectionStatus
                         {
                             status = "SUCCEEDED",
                             message = "Connection test successful"
@@ -75,7 +75,7 @@ namespace WebAppRunner.Service
                     return new AirbyteMessage
                     {
                         type = AirbyteMessageType.CONNECTION_STATUS,
-                        connectionStatus = new AirbyteConnectionStatus
+                        ConnectionStatus = new AirbyteConnectionStatus
                         {
                             status = "FAILED",
                             message = ex.Message
@@ -117,7 +117,7 @@ namespace WebAppRunner.Service
                 return new AirbyteMessage
                 {
                     type = AirbyteMessageType.CATALOG,
-                    catalog = catalog
+                    Catalog = catalog
                 };
             }
 
@@ -154,7 +154,7 @@ namespace WebAppRunner.Service
                         messages.Add(new AirbyteMessage
                         {
                             type = AirbyteMessageType.RECORD,
-                            record = airbyteRecord
+                            Record = airbyteRecord
                         });
                     }
                 }
@@ -186,7 +186,7 @@ namespace WebAppRunner.Service
                         yield return new AirbyteMessage
                         {
                             type = AirbyteMessageType.RECORD,
-                            record = new AirbyteRecord
+                            Record = new AirbyteRecord
                             {
                                 stream = table,
                                 data = record,

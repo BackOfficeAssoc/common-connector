@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <Company>Syniti</Company>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackRelease>false</PackRelease>
+    <PublishRelease>false</PublishRelease>
+    <IsPackable>false</IsPackable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Syniti.Clients.DataQuality" Version="1.8.179" />
+    <PackageReference Include="Syniti.Clients.QzarAuthorize" Version="1.8.179" />
+    <PackageReference Include="Syniti.Clients.QzarMint" Version="1.8.179" />
+    <PackageReference Include="Syniti.Clients.Starfish" Version="1.8.167" />
+    <PackageReference Include="Syniti.DataAccess" Version="7.0.3" />
+    <PackageReference Include="Syniti.PidginClient" Version="1.1.18" />
+    <PackageVersion Include="Syniti.Clients.QzarMint" Version="1.8.179" />
+    <PackageReference Include="Syniti.Hosting" Version="1.8.179" />
+    <PackageVersion Include="Syniti.Common" Version="1.8.179" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Syniti.Reader\ReaderLibrary.csproj" />
+  </ItemGroup>
+
+</Project>
