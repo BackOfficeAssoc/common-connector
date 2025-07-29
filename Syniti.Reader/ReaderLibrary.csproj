@@ -3,13 +3,20 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
+	<Nullable>enable</Nullable>
+	<ImplicitUsings>enable</ImplicitUsings>
+	<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+	<PackRelease>false</PackRelease>
+	<PublishRelease>false</PublishRelease>
+	<IsPackable>false</IsPackable>
+	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Syniti.Clients.DataQuality" />
-    <PackageReference Include="Syniti.Common" />
-    <PackageReference Include="Syniti.DataAccess" />
-    <PackageReference Include="Syniti.PidginClient" />
+    <PackageReference Include="Syniti.Clients.DataQuality" Version="1.8.168" />
+    <PackageReference Include="Syniti.Common" Version="1.8.168" />
+    <PackageReference Include="Syniti.DataAccess" Version="7.0.3" />
+    <PackageReference Include="Syniti.PidginClient" Version="1.1.18" />
   </ItemGroup>
 
 </Project>
